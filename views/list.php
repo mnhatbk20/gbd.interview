@@ -1,3 +1,6 @@
+<?php
+if(!defined('APP_ROOT')) {echo "access not allowed";  exit; }
+?>
 
 <!DOCTYPE html>
 <html lang="en">

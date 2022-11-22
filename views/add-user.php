@@ -1,4 +1,6 @@
 <?php
+if(!defined('APP_ROOT')) {echo "access not allowed";  exit; }
+
 
 $isUserExist = $data["isUserExist"];
 $isUsernameValid = $data["isUsernameValid"];

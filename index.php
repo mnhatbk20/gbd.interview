@@ -1,5 +1,7 @@
 <?php 
 
+define('APP_ROOT', true);
+
 const GET = "GET";
 const POST = "POST";
 const PUSH = "PUSH";
