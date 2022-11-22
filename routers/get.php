@@ -6,10 +6,6 @@ if ($path == "/"){
     showView("home");
     die();
 }
-if ($path == "/views/ds"){
-    showView("home");
-    die();
-}
 if ($path == "/list"){
     runController("list");
 }
