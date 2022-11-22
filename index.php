@@ -34,6 +34,13 @@ function showView($nameView,$dataView=null){
     require_once($pathView);
 }
 
+function responseJson($data){
+    ob_clean();
+    header('Content-Type: application/json; charset=utf-8');
+    echo json_encode($data);
+    die();
+}
+
 
 function runApp(){
 
