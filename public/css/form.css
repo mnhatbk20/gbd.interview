@@ -1,0 +1,29 @@
+form {
+    width: 400px;
+    margin: auto;
+}
+
+.input-group input {
+    width: 65%;
+}
+
+.input-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 1.2em;
+}
+
+.err-alert {
+    position: absolute;
+    color: red;
+    bottom: -1.2em;
+    right: 0;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.input-group label {
+    width: 35%;
+}

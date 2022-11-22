@@ -1,0 +1,109 @@
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.delete-user {
+  text-decoration: none;
+  padding: 2px 4px;
+  background: red;
+  color: white;
+}
+
+tr.data:hover {
+  color: white;
+  background: black;
+}
+
+.data .username {
+  cursor: pointer;
+}
+
+.background-popup {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  background: #000000c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+
+}
+
+.background-popup.active {
+  opacity: 1;
+  z-index: 10;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.background-popup .wrapper-popup {
+  background: white;
+  padding: 30px;
+  position: relative;
+}
+
+#popup-data-user .wrapper-popup {
+  width: 43%;
+}
+
+#popup-data-user .wrapper-popup #close-popup {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  color: white;
+  right: 0;
+  top: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+#popup-delete-confirm .wrapper-popup {
+  height: 100px;
+}
+
+#popup-delete-confirm .wrapper-popup {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+}
