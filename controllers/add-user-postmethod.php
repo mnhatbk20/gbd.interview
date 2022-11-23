@@ -2,7 +2,7 @@
 require_once("database/mysql.php");
 require_once("models/users.php");
 
-function ValidateFormData()
+function validateUser()
 {
 
     $isUsernameValid = (bool)preg_match('/^\pL+$/u', $_POST["username"]);
@@ -49,8 +49,8 @@ if ($isUserExist) {
     die();
 }else{
     
-    $validateArray = ValidateFormData();
-    $isFormValid = $validateArray['isFormValid'];
+    $validateUserArray = validateUser();
+    $isFormValid = $validateUserArray['isFormValid'];
     if ($isFormValid ) {
     
         $formData = [
@@ -66,7 +66,7 @@ if ($isUserExist) {
     
         header("Location: /list");
     } else {
-        showView("add-user", $validateArray);
+        showView("add-user", $validateUserArray);
         die();
     }
 
